@@ -13,10 +13,15 @@ ms.topic: article
 ms.assetid: c6777fb0-0754-4abf-8a1b-7639d23e9391
 caps.latest.revision: 8
 caps.handback.revision: 0
-author: Brendunsms.author: brendunsmanager: angrobe
+author: Brenduns
+ms.author: brenduns
+manager: angrobe
 
 ---
-# Ports used in System Center Configuration Manager*Applies to: System Center Configuration Manager (Current Branch)*
+# Ports used in System Center Configuration Manager
+
+*Applies to: System Center Configuration Manager (Current Branch)*
+
 System Center Configuration Manager is a distributed client/server system. The distributed nature of Configuration Manager means that connections can be established between site servers, site systems, and clients. Some connections use ports that are not configurable, and some support custom ports you specify. You must verify that the required ports are available if you use any port filtering technology such as firewalls, routers, proxy servers, and IPsec.  
 
 > [!NOTE]  
@@ -515,7 +520,7 @@ For more information see [Internet access requirements](/sccm/core/servers/deplo
 |Hypertext Transfer Protocol (HTTP)|--|80 or 8530 (See note 3, **Windows Server Update Services**)|  
 |Secure Hypertext Transfer Protocol (HTTPS)|--|443 or 8531 (See note 3, **Windows Server Update Services**)|  
 
-###  <a name="BKMK_PortsSQL-SQL"></a> SQL Server --> SQL Server  
+###  <a name="BKMK_PortsSQL-SQL"></a> SQL Server <--> SQL Server  
  Intersite database replication requires the SQL Server at one site to communicate directly with the SQL Server of its parent or child site.  
 
 |Description|UDP|TCP|  
